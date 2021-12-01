@@ -1,6 +1,6 @@
  const game = () => {
-     let pScore = 0;
-     let cScore = 0;
+     let PlayerScore = 0;
+     let ComputerScore = 0;
 
      const startGame = () => {
          const playBtn = document.querySelector(".intro button");
@@ -37,8 +37,8 @@
      const updateScore = () => {
          const playerScore = document.querySelector('.player-score p');
          const computerScore = document.querySelector('.computer-score p');
-         playerScore.textContent = pScore;
-         computerScore.textContent = cScore;
+         playerScore.textContent = PlayerScore;
+         computerScore.textContent = ComputerScore;
      }
 
      const compareHands = (playerChoice, computerChoice) => {
@@ -53,13 +53,13 @@
          if (playerChoice === 'rock') {
              if (computerChoice === 'scissors') {
                 winner.textContent = "Player Wins";
-                pScore++;
-                console.log(pScore);
+                PlayerScore++;
+                console.log(PlayerScore);
                 updateScore();
                 return;
              } else {
                 winner.textContent = "Computer Wins";
-                cScore++;
+                ComputerScore++;
                 updateScore();
                 return;
              }
@@ -68,12 +68,12 @@
          if (playerChoice === 'paper') {
             if (computerChoice === 'scissors') {
                winner.textContent = "Computer Wins";
-               cScore++;
+               ComputerScore++;
                updateScore();
                return;
             } else {
                winner.textContent = "player Wins";
-               pScore++;
+               PlayerScore++;
                updateScore();
                return;
             }
@@ -82,12 +82,12 @@
         if (playerChoice === 'scissors') {
             if (computerChoice === 'rock') {
                winner.textContent = "Computer Wins";
-               cScore++;
+               ComputerScore++;
                updateScore();
                return;
             } else {
                winner.textContent = "Player Wins";
-               pScore++;
+               PlayerScore++;
                updateScore();
                return;
             }
