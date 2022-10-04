@@ -1,4 +1,4 @@
-- "Rock Paper & Scissors" is a browser game, built with Javascript, HTML and CSS.
+# rock-paper-scissors-game
+ A simple game you can play on browsers built with Javascript, HTML and CSS.
 
-- Check it out here: https://red1code.github.io/rock-paper-scissors-game/
-
+## [Play it form here](https://red1code.github.io/rock-paper-scissors-game/)
